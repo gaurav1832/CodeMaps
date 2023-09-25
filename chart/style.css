@@ -1,0 +1,35 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.parent {
+  margin-top: 20px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  width: 1500px;
+  height: 700px;
+}
+
+.react-flow__node-custom {
+  padding: 10px;
+  background-color: #556677;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .parent {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
