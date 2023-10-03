@@ -4,13 +4,13 @@ const Cards = () => {
   return (
     <ChakraProvider>
     <Center>
-        <SimpleGrid columns={[3, 3, 4]} px={300} py={50}  spacing={10}>
+        <SimpleGrid columns={[1, 1, 4]} px={300} py={50}  spacing={10}>
             <Card>
                 <CardHeader>
-                <Heading size='md'> Customer dashboard</Heading>
+                <Heading size='md'>Sliding Window</Heading>
                 </CardHeader>
                 <CardBody>
-                <Text>View a summary of all your customers over the last month.</Text>
+                <Text>lorem ipsum dolar </Text>
                 </CardBody>
                 <CardFooter>
                 <Button>View here</Button>
@@ -18,10 +18,10 @@ const Cards = () => {
             </Card>
             <Card>
                 <CardHeader>
-                <Heading size='md'> Customer dashboard</Heading>
+                <Heading size='md'>Graphs</Heading>
                 </CardHeader>
                 <CardBody>
-                <Text>View a summary of all your customers over the last month.</Text>
+                <Text>lorem ipsum dolar </Text>
                 </CardBody>
                 <CardFooter>
                 <Button>View here</Button>
@@ -29,15 +29,30 @@ const Cards = () => {
             </Card>
             <Card>
                 <CardHeader>
-                <Heading size='md'> Customer dashboard</Heading>
+                <Heading size='md'>Trees</Heading>
                 </CardHeader>
                 <CardBody>
-                <Text>View a summary of all your customers over the last month.</Text>
+                <Text>lorem ipsum dolar </Text>
                 </CardBody>
                 <CardFooter>
                 <Button>View here</Button>
                 </CardFooter>
             </Card>
+            <Card>
+                <CardHeader>
+                <Heading size='md'>Binary Search</Heading>
+                </CardHeader>
+                <CardBody>
+                <Text>Low High Butterfly</Text>
+                </CardBody>
+                <CardFooter>
+                <Button>View here</Button>
+                </CardFooter>
+            </Card>
+            
+
+             
+            
     </SimpleGrid>
 </Center>
 </ChakraProvider>
@@ -45,3 +60,5 @@ const Cards = () => {
 }
 
 export default Cards
+
+

@@ -28,12 +28,20 @@ const Navbar = () => {
           </li>
           <li className="body-text !font-normal">
             <Link
-              href="https://jsmastery.pro/masterclass"
+              href=""
               target="_blank"
             >
               Feedback
             </Link>
           </li>
+          {/* <li className="body-text text-gradient_blue-purple !font-bold">
+            <Link
+              href="https://github.com/gaurav1832"
+              target="_blank"
+            >
+              Login
+            </Link>
+          </li> */}
         </ul>
       </div>
     </nav>
