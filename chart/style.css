@@ -15,7 +15,7 @@ body,
 .child {
   width: 1500px;
   height: 700px;
-  margin-top: 300px;
+  margin-bottom: 100px;
 }
 
 .react-flow__node-custom {

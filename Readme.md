@@ -1,4 +1,4 @@
-# CodeMaps
+# CodeMaps v1.1
 
 CodeMaps is a personal project aimed at helping individuals excel in technical interviews at top tech companies. It offers structured learning paths for mastering data structures and algorithms, company-specific interview questions, access to previous year interview queries, and a platform to share valuable interview experiences.
 
