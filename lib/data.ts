@@ -13,7 +13,7 @@ export const links = [
   },
   {
     name: "Interviews",
-    route: "interviews",
+    route: "/interviews",
   },
  
 ] as const;
