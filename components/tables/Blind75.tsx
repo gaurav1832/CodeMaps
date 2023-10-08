@@ -1,12 +1,7 @@
-
 import React from "react";
-
-import JsonData from "../public/json/questions.json";
-import difficulty_to_string from "./helperFunctions/difficulty_to_string";
-import difficulty_color from "./helperFunctions/difficulty_color";
-import truncateString from "./helperFunctions/shortenTitle";
-
-// import createLink from "./helperFunctions/createLink";
+import JsonData from "@/public/json/blind75.json";
+import difficulty_to_string from "@/components/helperFunctions/difficulty_to_string";
+import difficulty_color from "@/components/helperFunctions/difficulty_color";
 
 import {
   Center,
@@ -30,46 +25,57 @@ import {
   MenuDivider,
   Button,
   Link,
-  ChakraProvider,
   Input
 } from "@chakra-ui/react";
 
 import { useState, useEffect } from "react";
 
 function JsonDataDisplay() {
+//   const [data, setdata] = useState(JsonData);
 
-const [query, setquery] = useState("");
+//   useEffect(() => {
+//     console.log(data);
+//   }, [data]);
+
+//   function handleHeaderClick(header) {
+//     const newdata = data.difficulty.level.sort((a, b) =>
+//       a[header] > b[header] ? 1 : -1
+//     );
+//     setdata(newdata);
+//   }
+
+const [query, setquery] = useState("")
+
 
 const DisplayData = JsonData.filter((it) => 
-  it.title.toLowerCase().includes(query) ||
-  it.companies.map(com => com.name).includes(query)
+  it.stat.question__title.toLowerCase().includes(query)
   ).map((info) => {
     const base = "https://leetcode.com/problems/";
-    const url = base.concat(info.slug);
+    const url = base.concat(info.stat.question__title_slug);
     return (
-      <> 
+      <>
+ 
       <Tr>
-        {/* <Td>{info.id}</Td> */}
+        <Td>{info.stat.question_id}</Td>
         <Td>
-          <Link color={"gray.300"} target="_blank" href={url}>{info.title}</Link>
+          {" "}
+          <Link href={url}>
+            {info.stat.question__title}
+          </Link>
         </Td>
         <Td>
           <Tag
             variant={"subtle"}
             borderRadius={50}
-            colorScheme={difficulty_color(info.difficulty)}
+            colorScheme={difficulty_color(info.difficulty.level)}
           >
-           <Center> {info.difficulty} </Center>
+            {difficulty_to_string(info.difficulty.level)}
           </Tag>{" "}
         </Td>
 
-        {/* <Td>{info.stat.}</Td> */}
+        {/* <Td>{info.link}</Td> */}
 
-        <Td  maxWidth={150}>
-        {info.companies.map( info =>   <p className="inline px-2" key={info.slug}><Tag fontSize={12} variant='subtle' maxWidth={"fit-content"}>{info.name}{"("}{info.frequency}{")"}</Tag></p>)}  
-        </Td>
- 
-        <Td>
+         <Td>
           {/* <Menu>
                     <MenuButton as={Button}>Referenes</MenuButton>
                     <MenuList>
@@ -87,8 +93,8 @@ const DisplayData = JsonData.filter((it) =>
   });
 
   return (
-    <ChakraProvider>
-        <Center>
+    <> 
+  <Center>
     <Input 
     className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
     h={12}
@@ -100,30 +106,26 @@ const DisplayData = JsonData.filter((it) =>
     placeholder='Search ...'
     ></Input>
     </Center>
-      <Center>
-        <TableContainer
-          p={"30"}
-          borderRadius={"20"}
-          shadow={"dark-lg"}
-          bg={"gray.700"}
-        >
-          <Table>
-            <Thead>
-              <Tr>
+    <Center>
+      
+      <TableContainer
+        p={"30"}
+      >
+        <Table >
+          <Thead>
+            <Tr>
+              <Th color={"blue.300"}>ID</Th>
+              <Th color={"blue.300"}>Title</Th>
+              <Th color={"blue.300"}>Difficulty</Th>
+              <Th color={"blue.300"}>Resources</Th>
+            </Tr>
+          </Thead>
 
-                {/* <Th>ID</Th> */}
-
-                <Th color={"white"}>Title</Th>
-                <Th color={"white"} textAlign={'center'}>Difficulty</Th>
-                <Th color={"white"}>Companies</Th>
-               </Tr>
-            </Thead>
-
-            <Tbody>{DisplayData}</Tbody>
-          </Table>
-        </TableContainer>
-      </Center>
-    </ChakraProvider>
+          <Tbody>{DisplayData}</Tbody>
+        </Table>
+      </TableContainer>
+    </Center>
+    </>
   );
 }
 

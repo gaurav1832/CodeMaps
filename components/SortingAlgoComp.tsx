@@ -31,7 +31,7 @@ export default function SortinAlgorithmComp() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {sortingAlgo.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-gray-800 dark:text-white/80"
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-gray-300 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -41,7 +41,7 @@ export default function SortinAlgorithmComp() {
             }}
             custom={index}
           >
-          <Button p={5} fontSize={18} background={"transparent"}
+          <Button p={5} color={"black"} fontSize={18} background={"transparent"}
           _hover={{background: "transparent", shadow: "2xl"}}
           >
           {skill} {"  "} <IoArrowForwardCircle/>

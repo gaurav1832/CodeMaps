@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
-import Project from "./project";
+import Project from "./algorithm";
 import { useSectionInView } from "@/lib/hooks";
 import { Button, Center } from "@chakra-ui/react";
 import { IoArrowForwardCircle } from "react-icons/io5";

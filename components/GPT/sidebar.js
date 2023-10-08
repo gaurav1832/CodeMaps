@@ -13,6 +13,8 @@ import {
   Input,
 } from "@chakra-ui/react";
 
+import { IoSend } from "react-icons/io5";
+
 export default function Sidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -42,8 +44,8 @@ export default function Sidebar() {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        GPT
+      <Button mb={50} ref={btnRef} colorScheme="teal" onClick={onOpen}>
+        Help?
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -54,15 +56,20 @@ export default function Sidebar() {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Ask ChatGPT</DrawerHeader>
+          <DrawerHeader>Write your prompt...</DrawerHeader>
 
           <DrawerBody>
             <Input placeholder="Type here..." />
           </DrawerBody>
 
           <DrawerFooter>
-            <Button onClick={getMessages} colorScheme="teal">
-              Ask
+            <Button
+              onClick={getMessages}
+              colorScheme="teal"
+              fontWeight={900}
+              fontSize={24}
+            >
+              <IoSend />
             </Button>
           </DrawerFooter>
         </DrawerContent>
