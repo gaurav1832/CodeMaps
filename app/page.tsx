@@ -1,8 +1,4 @@
 "use client"
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
 import Projects from "@/components/algorithms";
 import SectionDivider from "@/components/section-divider";
 import Sortings from "@/components/SortingAlgoComp";
@@ -15,8 +11,6 @@ export default function Home() {
   return (
     <ChakraProvider>
     <main className="flex flex-col items-center px-4">
-      {/* <Intro /> */}
-      {/* <About /> */}
 
       <Chart/>
       <SectionDivider />
@@ -25,8 +19,6 @@ export default function Home() {
       <GPT/>
       <Tab/>
 
-      {/* <Experience />
-      <Contact /> */}
     </main>
     </ChakraProvider>
   );
