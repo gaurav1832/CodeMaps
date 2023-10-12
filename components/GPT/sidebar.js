@@ -11,6 +11,7 @@ import {
   useDisclosure,
   Button,
   Input,
+  Center,
 } from "@chakra-ui/react";
 
 import { IoSend } from "react-icons/io5";
@@ -54,12 +55,19 @@ export default function Sidebar() {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg={"gray.300"}>
           <DrawerCloseButton />
-          <DrawerHeader>Write your prompt...</DrawerHeader>
+          <DrawerHeader color={"gray.800"}>Write your prompt...</DrawerHeader>
 
           <DrawerBody>
-            <Input placeholder="Type here..." />
+            <Center>
+              <Input
+                width={"80%"}
+                textColor={"gray.800"}
+                placeholder="Type here..."
+                borderColor={"gray.800"}
+              />
+            </Center>
           </DrawerBody>
 
           <DrawerFooter>

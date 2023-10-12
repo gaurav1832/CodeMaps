@@ -13,9 +13,9 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
 
       <Chart/>
-      <SectionDivider />
-      <Projects />
-      <Sortings />
+      <SectionDivider/>
+      <Projects/>
+      <Sortings/>
       <GPT/>
       <Tab/>
 
