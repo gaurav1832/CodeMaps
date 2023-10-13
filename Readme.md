@@ -29,5 +29,6 @@ Our vision is to become the go-to platform for anyone aspiring to join the tech 
 
 ## Contributing
 
-We welcome contributions to CodeMaps! Feel free to open issues, submit pull requests, or <a href="https://forms.gle/UvQ4AkccbfswxRCJA targer=_blank>share your interview experiences<a/> to help others in their preparation journey.
+We welcome contributions to CodeMaps! Feel free to open issues, submit pull requests, or <a href="https://forms.gle/JHPRCuPpgLGGzH9d9" target="_blank">Introduction</a>
+ to help others in their preparation journey.
 
