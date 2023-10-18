@@ -1,5 +1,5 @@
 import React from 'react'
-import Interviews from './Components/Interviews'
+import Interviews from './Interviews'
  const page = () => {
   return (
     <>
