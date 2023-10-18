@@ -4,7 +4,7 @@ import React from "react";
 import JsonData from "@/public/json/questions.json";
 import difficulty_color from "@/components/helperFunctions/difficulty_color";
  
-import {
+import { 
   Heading,
   Center,
   TableContainer,
@@ -34,7 +34,7 @@ import {
  
 function JsonDataDisplay() {
 
- const topic = "Two Pointers"
+const topic = "Union Find"
 const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
   ).map((info) => {
     const base = "https://leetcode.com/problems/";
@@ -42,7 +42,6 @@ const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
     return (
       <> 
       <Tr>
-        {/* <Td>{info.id}</Td> */}
         <Td>
           <Link color={"gray.300"} target="_blank" href={url}>{info.title}</Link>
         </Td>
@@ -80,8 +79,6 @@ const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
           <Table>
             <Thead>
               <Tr>
-
-                {/* <Th>ID</Th> */}
 
                 <Th color={"blue.300"}>Title</Th>
                 <Th color={"blue.300"} textAlign={'center'}>Difficulty</Th>

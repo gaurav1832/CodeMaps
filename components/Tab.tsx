@@ -32,6 +32,7 @@ import JsonDataDisplayLL from "./tables/dataTableLL";
 import JsonDataDisplayTopo from "./tables/dataTableTopo";
 import JsonDataDisplaySF from "./tables/dataTableSF";
 import JsonDataDisplayBit from "./tables/dataTableBit";
+import JsonDataDisplayUF from "./tables/dataTableUF";
 import SectionHeading from "./section-heading";
 import {PiCodeBlockLight} from "react-icons/pi"
 const TabFunction = () => {
@@ -77,6 +78,7 @@ const TabFunction = () => {
           <Tab color={"red.400"}>L 8</Tab>
           <Tab color={"red.500"}>L 9</Tab>
           <Tab color={"red.600"}>L 10</Tab>
+          <Tab color={"red.600"}>L 11</Tab>
           <Tab color={"pink.600"}>Must do</Tab>
           <Tab>All</Tab>
         </TabList>
@@ -163,8 +165,12 @@ const TabFunction = () => {
             <JsonDataDisplayBit />
           </TabPanel>
 
+          {/* Union Find */}
+          <TabPanel>
+            <JsonDataDisplayUF />
+          </TabPanel>
           {/* Must do */}
-                    <TabPanel>
+          <TabPanel>
             <Blind75 />
           </TabPanel>
 

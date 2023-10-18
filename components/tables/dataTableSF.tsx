@@ -71,7 +71,7 @@ const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
   return (
     <ChakraProvider>
     <Center>
-      <Heading mt={10} fontSize={24}>Problems on Slow and Fast Pointers...</Heading>
+      <Heading mt={10} fontSize={24}>Problems on {topic}...</Heading>
     </Center>
       <Center>
         <TableContainer

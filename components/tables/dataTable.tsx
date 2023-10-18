@@ -41,9 +41,9 @@ const DisplayData = JsonData.filter((it) =>
     return (
       <> 
       <Tr>
-        <Td>
+        {/* <Td>
         <input  type="checkbox" className="ques-checkbox" name="mycheckbox" autoComplete="off" value="yes"></input>
-        </Td>
+        </Td> */}
         <Td>
           <Link color={"gray.300"} target="_blank" href={url}>{info.title}</Link>
         </Td>
@@ -102,7 +102,7 @@ const DisplayData = JsonData.filter((it) =>
             <Thead>
               <Tr>
 
-                <Th>Status</Th>
+                {/* <Th>Status</Th> */}
 
                 <Th color={"blue.300"}>Title</Th>
                 <Th color={"blue.300"} textAlign={'center'}>Difficulty</Th>
