@@ -3,7 +3,7 @@ import React from "react";
 
 import JsonData from "@/public/json/questions.json";
 import difficulty_color from "@/components/helperFunctions/difficulty_color";
- 
+import questionStatus from "../questionStatus";
 import {
   Center,
   TableContainer,
@@ -11,20 +11,10 @@ import {
   Th,
   Tr,
   Thead,
-  Tfoot,
   Td,
   Tbody,
-  TableCaption,
   Tag,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
+  Checkbox,
   Link,
   ChakraProvider,
   Input
@@ -32,20 +22,28 @@ import {
 
 import { useState, useEffect } from "react";
 
+ 
+
+
 function JsonDataDisplay() {
 
 const [query, setquery] = useState("");
+ 
 
 const DisplayData = JsonData.filter((it) => 
-  it.title.toLowerCase().includes(query) ||
-  it.companies.map(com => com.name).includes(query)
+  it.title.toLowerCase().includes(query.toLowerCase()) ||
+  it.difficulty.toLowerCase().includes(query.toLowerCase())
   ).map((info) => {
+
+    
     const base = "https://leetcode.com/problems/";
     const url = base.concat(info.slug);
     return (
       <> 
       <Tr>
-        {/* <Td>{info.id}</Td> */}
+        <Td>
+        <input  type="checkbox" className="ques-checkbox" name="mycheckbox" autoComplete="off" value="yes"></input>
+        </Td>
         <Td>
           <Link color={"gray.300"} target="_blank" href={url}>{info.title}</Link>
         </Td>
@@ -59,7 +57,7 @@ const DisplayData = JsonData.filter((it) =>
           </Tag>{" "}
         </Td>
 
-        {/* <Td>{info.stat.}</Td> */}
+    
 
         <Td  maxWidth={150}>
         {info.companies.map( info =>   <p className="inline px-2" key={info.slug}><Tag fontSize={12} variant='subtle' maxWidth={"fit-content"}>{info.name}{"("}{info.frequency}{")"}</Tag></p>)}  
@@ -93,7 +91,7 @@ const DisplayData = JsonData.filter((it) =>
     onChange={(e) => setquery(e.target.value)}
     mt={50}
     my={50}
-    placeholder='Search ...'
+    placeholder='Search by title or difficulty ...'
     ></Input>
     </Center>
       <Center>
@@ -104,7 +102,7 @@ const DisplayData = JsonData.filter((it) =>
             <Thead>
               <Tr>
 
-                {/* <Th>ID</Th> */}
+                <Th>Status</Th>
 
                 <Th color={"blue.300"}>Title</Th>
                 <Th color={"blue.300"} textAlign={'center'}>Difficulty</Th>
@@ -119,5 +117,8 @@ const DisplayData = JsonData.filter((it) =>
     </ChakraProvider>
   );
 }
+
+
+
 
 export default JsonDataDisplay;

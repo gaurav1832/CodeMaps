@@ -28,6 +28,7 @@ export default function SortinAlgorithmComp() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Sort out your life !</SectionHeading>
+      <h2 className="mb-10 text-xl text-bold">with must do sorting algorithms</h2>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {sortingAlgo.map((skill, index) => (
           <motion.li

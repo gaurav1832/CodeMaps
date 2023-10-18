@@ -3,7 +3,7 @@ import Algorithms from "@/components/algorithms";
 import SectionDivider from "@/components/section-divider";
 import Sortings from "@/components/SortingAlgoComp";
 import Chart from '../chart/App'
-import Tab from '@/components/Tab'
+import Tab from '@/components/Tab' 
 import Interviews from "@/components/Interviews";
 import GPT from '@/components/GPT/App'
 import { ChakraProvider } from "@chakra-ui/react";

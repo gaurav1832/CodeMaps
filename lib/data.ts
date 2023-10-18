@@ -5,6 +5,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import twopointer from "@/public/twoPtr.png";
 import binarysearch from "@/public/binary-search.png";
 import floydcycle from "@/public/slowfast1.png";
+import backtrack from "@/public/backtracking.png"
+import rec from "@/public/recursion.png"
+import dnf from "@/public/dnf.png"
 import logo from "@/public/logo.png"
 export const links = [
   {
@@ -45,7 +48,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const algorithmsData = [
   {
     title: "Two Pointers",
     description:
@@ -67,6 +70,26 @@ export const projectsData = [
     tags: ["Linked List", "Two Pointers"],
     imageUrl: floydcycle,
   },
+   
+  {
+    title: "Dutch National Flag problem",
+    description:"The Dutch National Flag problem sorts an array with three distinct values, like Red, White, Blue, efficiently using a single pass algorithm.",
+    tags: ["Arrays", "Pointers"],
+    imageUrl: dnf,
+  },
+  {
+    title: "Recursion",
+    description:"Recursion is a programming technique where a function calls itself to solve a problem, breaking it down into smaller, solvable instances.",
+    tags: ["Arrays","Strings", "Matrix", "Tree", "Graph", "Stack"],
+    imageUrl: rec,
+  },
+  {
+    title: "Backtracking",
+    description:"Backtracking is a problem-solving algorithm that explores potential solutions, undoing incorrect choices to find the correct one efficiently.",
+    tags: ["Arrays","Strings", "Matrix", "Tree", "Graph", "Stack"],
+    imageUrl: backtrack,
+  },
+ 
 ] as const;
 
 export const sortingAlgo = [

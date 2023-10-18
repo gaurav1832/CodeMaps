@@ -1,5 +1,6 @@
 "use client"
 import React from "react";
+import { useEffect, useState } from "react";
 import {
   Heading,
   Tabs,
@@ -35,45 +36,52 @@ import SectionHeading from "./section-heading";
 import {PiCodeBlockLight} from "react-icons/pi"
 const TabFunction = () => {
  
+  const [showTab, setShowTab] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setShowTab(false);
+        
+      } else {
+        setShowTab(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
    
    return (
     <> 
-    
       <SectionHeading>Problems <Center> <Heading mt={5} fontSize={48}> <PiCodeBlockLight/></Heading> </Center> </SectionHeading>
      <Center>
+      { showTab &&
+      
       <Tabs size="md" variant="enclosed">
         <TabList>
-          <Tab>Must do</Tab>
+          <Tab color={"green.100"}>L 1</Tab> 
+          <Tab color={"green.200"}>L 2</Tab>
+          <Tab color={"green.200"}>L 2.1</Tab>
+          <Tab color={"green.300"}>L 3</Tab>
+          <Tab color={"green.300"}>L 3.1</Tab>
+          <Tab color={"green.300"}>L 3.3</Tab>
+          <Tab color={"yellow.400"}>L 4</Tab>
+          <Tab color={"yellow.500"}>L 5</Tab>
+          <Tab color={"yellow.600"}>L 6</Tab>
+          <Tab color={"yellow.700"}>L 7</Tab>
+          <Tab color={"yellow.700"}>L 7.1</Tab>
+          <Tab color={"yellow.700"}>L 7.2</Tab>
+          <Tab color={"red.300"}>L 7.3</Tab>
+          <Tab color={"red.400"}>L 8</Tab>
+          <Tab color={"red.500"}>L 9</Tab>
+          <Tab color={"red.600"}>L 10</Tab>
+          <Tab color={"pink.600"}>Must do</Tab>
           <Tab>All</Tab>
- 
-          <Tab>L 1</Tab> 
-          <Tab>L 2</Tab>
-          <Tab>L 2.1</Tab>
-          <Tab>L 3</Tab>
-          <Tab>L 3.1</Tab>
-          <Tab>L 3.3</Tab>
-          <Tab>L 4</Tab>
-          <Tab>L 5</Tab>
-          <Tab>L 6</Tab>
-          <Tab>L 7</Tab>
-          <Tab>L 7.1</Tab>
-          <Tab>L 7.2</Tab>
-          <Tab>L 7.3</Tab>
-          <Tab>L 8</Tab>
-          <Tab>L 9</Tab>
-          <Tab>L 10</Tab>
         </TabList>
         <TabPanels>
-          {/* Blind75 */}
-          <TabPanel>
-            <Blind75 />
-          </TabPanel>
-
-          {/* All */}
-          <TabPanel>
-            <JsonDataDisplay />
-          </TabPanel>
+ 
 
         {/* Array */}
           <TabPanel>
@@ -155,8 +163,19 @@ const TabFunction = () => {
             <JsonDataDisplayBit />
           </TabPanel>
 
+          {/* Must do */}
+                    <TabPanel>
+            <Blind75 />
+          </TabPanel>
+
+          {/* All */}
+          <TabPanel>
+            <JsonDataDisplay />
+          </TabPanel>
+
         </TabPanels>
       </Tabs>
+      }
     </Center>
     </>
   );
