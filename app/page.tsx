@@ -1,5 +1,5 @@
 "use client"
-import Projects from "@/components/algorithms";
+import Algorithms from "@/components/algorithms";
 import SectionDivider from "@/components/section-divider";
 import Sortings from "@/components/SortingAlgoComp";
 import Chart from '../chart/App'
@@ -14,10 +14,11 @@ export default function Home() {
 
       <Chart/>
       <SectionDivider/>
-      <Projects/>
+      <Tab/>
+
+      <Algorithms/>
       <Sortings/>
       <GPT/>
-      <Tab/>
 
     </main>
     </ChakraProvider>

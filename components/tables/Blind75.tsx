@@ -10,20 +10,10 @@ import {
   Th,
   Tr,
   Thead,
-  Tfoot,
   Td,
   Tbody,
-  TableCaption,
   Tag,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
+  Code,
   Link,
   Input
 } from "@chakra-ui/react";
@@ -48,7 +38,8 @@ const [query, setquery] = useState("")
 
 
 const DisplayData = JsonData.filter((it) => 
-  it.stat.question__title.toLowerCase().includes(query)
+  it.stat.question__title.toLowerCase().includes(query.toLowerCase()) || it.stat.topic.toLowerCase().includes(query.toLowerCase()) 
+  || difficulty_to_string(it.difficulty.level).toLowerCase().includes(query.toLowerCase())
   ).map((info) => {
     const base = "https://leetcode.com/problems/";
     const url = base.concat(info.stat.question__title_slug);
@@ -76,16 +67,8 @@ const DisplayData = JsonData.filter((it) =>
         {/* <Td>{info.link}</Td> */}
 
          <Td>
-          {/* <Menu>
-                    <MenuButton as={Button}>Referenes</MenuButton>
-                    <MenuList>
-                      <MenuItem>Download</MenuItem>
-                      <MenuItem>Create a Copy</MenuItem>
-                      <MenuItem>Mark as Draft</MenuItem>
-                      <MenuItem>Delete</MenuItem>
-                      <MenuItem>Attend a Workshop</MenuItem>
-                    </MenuList>
-                  </Menu> */}
+          <Code>{info.stat.topic}</Code>
+          
         </Td>
       </Tr>
       </>
@@ -103,7 +86,7 @@ const DisplayData = JsonData.filter((it) =>
     onChange={(e) => setquery(e.target.value)}
     mt={50}
     my={50}
-    placeholder='Search ...'
+    placeholder='Search by title or topic or difficulty...'
     ></Input>
     </Center>
     <Center>
@@ -117,7 +100,7 @@ const DisplayData = JsonData.filter((it) =>
               <Th color={"blue.300"}>ID</Th>
               <Th color={"blue.300"}>Title</Th>
               <Th color={"blue.300"}>Difficulty</Th>
-              <Th color={"blue.300"}>Resources</Th>
+              <Th color={"blue.300"}>Topic</Th>
             </Tr>
           </Thead>
 

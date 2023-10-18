@@ -11,7 +11,8 @@
       "total_acs": 3956589,
       "total_submitted": 8501022,
       "frontend_question_id": 1,
-      "is_new_question": false
+      "is_new_question": false,
+      "topic": "Arrays"
     },
     "status": null,
     "difficulty": {
@@ -34,7 +35,8 @@
       "total_acs": 1219805,
       "total_submitted": 2361522,
       "frontend_question_id": 121,
-      "is_new_question": false
+      "is_new_question": false,
+      "topic": "Arrays"
     },
     "status": null,
     "difficulty": {
@@ -57,7 +59,8 @@
       "total_acs": 755376,
       "total_submitted": 1332671,
       "frontend_question_id": 217,
-      "is_new_question": false
+      "is_new_question": false,
+      "topic": "Arrays"
     },
     "status": null,
     "difficulty": {
@@ -80,7 +83,8 @@
       "total_acs": 721886,
       "total_submitted": 1174659,
       "frontend_question_id": 238,
-      "is_new_question": false
+      "is_new_question": false,
+      "topic": "Arrays"
     },
     "status": null,
     "difficulty": {
@@ -103,7 +107,8 @@
       "total_acs": 1339745,
       "total_submitted": 2803844,
       "frontend_question_id": 53,
-      "is_new_question": false
+      "is_new_question": false,
+      "topic": "Arrays"
     },
     "status": null,
     "difficulty": {
@@ -126,11 +131,204 @@
       "total_acs": 453538,
       "total_submitted": 1383142,
       "frontend_question_id": 152,
-      "is_new_question": false
+      "is_new_question": false,
+      "topic": "Arrays"
     },
     "status": null,
     "difficulty": {
       "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 153,
+      "question__article__live": true,
+      "question__article__slug": "find-minimum-in-rotated-sorted-array",
+      "question__article__has_video_solution": false,
+      "question__title": "Find Minimum in Rotated Sorted Array",
+      "question__title_slug": "find-minimum-in-rotated-sorted-array",
+      "question__hide": false,
+      "total_acs": 563178,
+      "total_submitted": 1218758,
+      "frontend_question_id": 153,
+      "is_new_question": false,
+      "topic": "Arrays"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 15,
+      "question__article__live": true,
+      "question__article__slug": "3sum",
+      "question__article__has_video_solution": false,
+      "question__title": "3Sum",
+      "question__title_slug": "3sum",
+      "question__hide": false,
+      "total_acs": 1221484,
+      "total_submitted": 4347532,
+      "frontend_question_id": 15,
+      "is_new_question": false,
+      "topic": "Arrays"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 11,
+      "question__article__live": true,
+      "question__article__slug": "container-with-most-water",
+      "question__article__has_video_solution": true,
+      "question__title": "Container With Most Water",
+      "question__title_slug": "container-with-most-water",
+      "question__hide": false,
+      "total_acs": 885528,
+      "total_submitted": 1676815,
+      "frontend_question_id": 11,
+      "is_new_question": false,
+      "topic": "Arrays"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 371,
+      "question__article__live": true,
+      "question__article__slug": "sum-of-two-integers",
+      "question__article__has_video_solution": false,
+      "question__title": "Sum of Two Integers",
+      "question__title_slug": "sum-of-two-integers",
+      "question__hide": false,
+      "total_acs": 216345,
+      "total_submitted": 427619,
+      "frontend_question_id": 371,
+      "is_new_question": false,
+      "topic": "Bit Manipulation"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 191,
+      "question__article__live": true,
+      "question__article__slug": "number-1-bits",
+      "question__article__has_video_solution": false,
+      "question__title": "Number of 1 Bits",
+      "question__title_slug": "number-of-1-bits",
+      "question__hide": false,
+      "total_acs": 473382,
+      "total_submitted": 877800,
+      "frontend_question_id": 191,
+      "is_new_question": false,
+      "topic": "Bit Manipulation"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 338,
+      "question__article__live": true,
+      "question__article__slug": "counting-bits",
+      "question__article__has_video_solution": false,
+      "question__title": "Counting Bits",
+      "question__title_slug": "counting-bits",
+      "question__hide": false,
+      "total_acs": 340401,
+      "total_submitted": 483244,
+      "frontend_question_id": 338,
+      "is_new_question": false,
+      "topic": "Bit Manipulation"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 268,
+      "question__article__live": true,
+      "question__article__slug": "missing-number",
+      "question__article__has_video_solution": false,
+      "question__title": "Missing Number",
+      "question__title_slug": "missing-number",
+      "question__hide": false,
+      "total_acs": 631074,
+      "total_submitted": 1148982,
+      "frontend_question_id": 268,
+      "is_new_question": false,
+      "topic": "Bit Manipulation"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 190,
+      "question__article__live": true,
+      "question__article__slug": "reverse-bits",
+      "question__article__has_video_solution": false,
+      "question__title": "Reverse Bits",
+      "question__title_slug": "reverse-bits",
+      "question__hide": false,
+      "total_acs": 328811,
+      "total_submitted": 777823,
+      "frontend_question_id": 190,
+      "is_new_question": false,
+      "topic": "Bit Manipulation"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
     },
     "paid_only": false,
     "is_favor": false,

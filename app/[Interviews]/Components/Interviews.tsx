@@ -17,7 +17,6 @@ import {
 
 import {Interviews} from '@/lib/data'
 
- 
 
 interface TestimonialCardProps {
   name: string

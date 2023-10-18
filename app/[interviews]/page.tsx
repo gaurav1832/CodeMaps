@@ -1,9 +1,8 @@
 import React from 'react'
-import Interviews from './Interviews'
+import Interviews from './Components/Interviews'
  const page = () => {
   return (
     <>
- 
      <Interviews/>
     </>
 

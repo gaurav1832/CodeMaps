@@ -44,11 +44,9 @@ const TabFunction = () => {
      <Center>
       <Tabs size="md" variant="enclosed">
         <TabList>
+          <Tab>Must do</Tab>
           <Tab>All</Tab>
-          <Tab>Blind 75</Tab>
-          <Tab>Easy</Tab>
-          <Tab>Medium</Tab>
-          <Tab>Hard</Tab>
+ 
           <Tab>L 1</Tab> 
           <Tab>L 2</Tab>
           <Tab>L 2.1</Tab>
@@ -67,29 +65,14 @@ const TabFunction = () => {
           <Tab>L 10</Tab>
         </TabList>
         <TabPanels>
+          {/* Blind75 */}
+          <TabPanel>
+            <Blind75 />
+          </TabPanel>
+
           {/* All */}
           <TabPanel>
             <JsonDataDisplay />
-          </TabPanel>
-
-        {/* Blind75 */}
-          <TabPanel>
-          <Blind75 />
-          </TabPanel>
-
-          {/* Easy */}
-          <TabPanel>
-            <JsonDataDisplayEasy />
-          </TabPanel>
-
-        {/* Medium */}
-          <TabPanel>
-            <JsonDataDisplayMedium />
-          </TabPanel>
-
-        {/* Hard */}
-          <TabPanel>
-            <JsonDataDisplayHard />
           </TabPanel>
 
         {/* Array */}

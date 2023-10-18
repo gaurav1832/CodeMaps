@@ -10,7 +10,7 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 export default function Projects() {
  
   return (
-    <section   id="projects" className="scroll-mt-28 mb-28 ">
+    <section id="projects" className="scroll-mt-28 mb-28 ">
       <SectionHeading>Algorithms you must know ...</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
