@@ -10,10 +10,20 @@ import {
   Th,
   Tr,
   Thead,
+  Tfoot,
   Td,
   Tbody,
+  TableCaption,
   Tag,
-  Code,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Button,
   Link,
   Input
 } from "@chakra-ui/react";
@@ -21,93 +31,62 @@ import {
 import { useState, useEffect } from "react";
 
 function JsonDataDisplay() {
- 
-  const checkedQuestionString = localStorage.getItem("checkedQuestion");
-  const checkedQuestion = checkedQuestionString
-    ? JSON.parse(checkedQuestionString)
-    : {};
-  
-  const [questionInfo, setquestionInfo] = useState(
-    JsonData.map((d) => {
-      return {
-        select: d.stat.question__title in checkedQuestion,
-        id: d.stat.question_id,
-        title: d.stat.question__title,
-        slug: d.stat.question__title_slug,
-        difficulty: d.difficulty,
-        topic: d.stat.topic
-      };
-    })
-  );
-  
-  function addCheckedQuestion(questionName: string) {
-    var newObject = { ...checkedQuestion };
-    newObject[questionName] = true; // Value doesn't matter
-    localStorage.setItem("checkedQuestion", JSON.stringify(newObject));
-  }
-  
-  function removeCheckedQuestion(questionName: string) {
-    var newObject = { ...checkedQuestion };
-    delete newObject[questionName];
-    localStorage.setItem("checkedQuestion", JSON.stringify(newObject));
-  }
+//   const [data, setdata] = useState(JsonData);
 
+//   useEffect(() => {
+//     console.log(data);
+//   }, [data]);
+
+//   function handleHeaderClick(header) {
+//     const newdata = data.difficulty.level.sort((a, b) =>
+//       a[header] > b[header] ? 1 : -1
+//     );
+//     setdata(newdata);
+//   }
 
 const [query, setquery] = useState("")
 
 
 const DisplayData = JsonData.filter((it) => 
-  it.stat.question__title.toLowerCase().includes(query.toLowerCase()) || it.stat.topic.toLowerCase().includes(query.toLowerCase()) 
-  || difficulty_to_string(it.difficulty.level).toLowerCase().includes(query.toLowerCase())
-  ) && 
-  questionInfo?.map((d, i) => {
+  it.stat.question__title.toLowerCase().includes(query)||
+  difficulty_to_string(it).includes(query.toLowerCase())
+  ).map((info) => {
     const base = "https://leetcode.com/problems/";
-    const url = base.concat(d.slug);
+    const url = base.concat(info.stat.question__title_slug);
     return (
       <>
  
       <Tr>
-      <Td>        <input
-        style={{ margin: "10px" }}
-        onChange={(e) => {
-          // add to list
-          let checked = e.target.checked;
-          var newquestionInfo = questionInfo.slice(); //Slice just copies the array
-          newquestionInfo[i].select = checked;
-          setquestionInfo(newquestionInfo);
-          if (checked) {
-            addCheckedQuestion(d.title);
-          } else {
-            // to remove from localstorage
-            removeCheckedQuestion(d.title);
-          }
-        }}
-        checked={d.select}
-        type="checkbox"
-      /></Td>
-
-        <Td>{d.id}</Td>
+        <Td>{info.stat.question_id}</Td>
         <Td>
           {" "}
           <Link href={url}>
-            {d.title}
+            {info.stat.question__title}
           </Link>
         </Td>
         <Td>
           <Tag
             variant={"subtle"}
             borderRadius={50}
-            colorScheme={difficulty_color(d.difficulty.level)}
+            colorScheme={difficulty_color(info.difficulty.level)}
           >
-            {difficulty_to_string(d.difficulty.level)}
+            {difficulty_to_string(info.difficulty.level)}
           </Tag>{" "}
         </Td>
 
         {/* <Td>{info.link}</Td> */}
 
          <Td>
-          <Code>{d.topic}</Code>
-          
+          {/* <Menu>
+                    <MenuButton as={Button}>Referenes</MenuButton>
+                    <MenuList>
+                      <MenuItem>Download</MenuItem>
+                      <MenuItem>Create a Copy</MenuItem>
+                      <MenuItem>Mark as Draft</MenuItem>
+                      <MenuItem>Delete</MenuItem>
+                      <MenuItem>Attend a Workshop</MenuItem>
+                    </MenuList>
+                  </Menu> */}
         </Td>
       </Tr>
       </>
@@ -117,7 +96,7 @@ const DisplayData = JsonData.filter((it) =>
   return (
     <> 
   <Center>
-    {/* <Input 
+    <Input 
     className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
     h={12}
     fontWeight={500}
@@ -125,8 +104,8 @@ const DisplayData = JsonData.filter((it) =>
     onChange={(e) => setquery(e.target.value)}
     mt={50}
     my={50}
-    placeholder='Search by title or topic or difficulty...'
-    ></Input> */}
+    placeholder='Search ...'
+    ></Input>
     </Center>
     <Center>
       
@@ -136,11 +115,10 @@ const DisplayData = JsonData.filter((it) =>
         <Table >
           <Thead>
             <Tr>
-              <Th color={"blue.300"}>Status</Th>
               <Th color={"blue.300"}>ID</Th>
               <Th color={"blue.300"}>Title</Th>
               <Th color={"blue.300"}>Difficulty</Th>
-              <Th color={"blue.300"}>Topic</Th>
+              {/* <Th color={"blue.300"}>Resources</Th> */}
             </Tr>
           </Thead>
 
