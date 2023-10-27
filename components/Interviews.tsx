@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {
+  Heading,
   Avatar,
   Box,
   chakra,
@@ -93,10 +94,12 @@ const [query, setquery] = useState("")
 
   return (
     <ChakraProvider> 
+      <Heading>Interview experiences...</Heading>
     <Center id='interviews'>  
     <Input 
       className="bg-gray-100 border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       h={14}
+      w={900}
       fontWeight={700}
       fontSize={20}
       onChange={(e) => setquery(e.target.value)}
@@ -114,8 +117,8 @@ const [query, setquery] = useState("")
  
       <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={'10'} mt={10} mb={10} mx={'auto'}>
         {Interviews.filter((it) => 
-        it.name.toLowerCase().includes(query) || 
-        it.role.toLowerCase().includes(query) 
+        it.name.toLowerCase().includes(query.toLowerCase()) || 
+        it.role.toLowerCase().includes(query.toLowerCase()) 
         ).map((cardInfo, index) => (
           <TestimonialCard key={index} {...cardInfo} index={index} />
         ))}

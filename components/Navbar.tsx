@@ -11,15 +11,15 @@ const Navbar = () => {
           <Image src='/logo.png' width={180} height={2} alt='CM_logo' />
         </Link>
 
-        {/* <Image 
+     <Image 
           src="/hamburger-menu.svg"
           width={30}
           height={30}
           alt="Hamburger menu"
           className="block md:hidden"
-        /> */}
+        />  
 
-         {/* <ul className="flex-center gap-x-3 max-md:hidden md:gap-x-10">
+      {/* <ul className="flex-center gap-x-3 max-md:hidden md:gap-x-10">
           <li className="body-text text-gradient_blue-purple !font-bold">
             <Link
               href="https://github.com/gaurav1832"

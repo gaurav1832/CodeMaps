@@ -9,14 +9,21 @@ import backtrack from "@/public/backtracking.png"
 import rec from "@/public/recursion.png"
 import dnf from "@/public/dnf.png"
 import logo from "@/public/logo.png"
+import dfs from "@/public/dfs.png"
+import bfs from "@/public/bfs.png"
+import dj from "@/public/dj-3 copy.png"
+import topo from "@/public/topo.png"
+import test from "@/public/testing.png"
+import sieve from "@/public/sieve.png"
+import fw from "@/public/fwalgo.png"
 export const links = [
   {
     name: "Home",
     route: "/",
   },
   {
-    name: "Interviews",
-    route: "/Interviews",
+    name: "Algorithms",
+    route: "/algorithms",
   },
  
 ] as const;
@@ -52,7 +59,7 @@ export const algorithmsData = [
   {
     title: "Two Pointers",
     description:
-      "The two pointers algorithm is a technique using two pointers, often with different speeds or directions, to optimize solving various problems like searching, sorting, or finding specific pairs in arrays or lists, reducing time complexity.",
+      "The two pointers algorithm is a technique using two pointers, often with different speeds or directions, to optimize solving various problems like searching, sorting, etc.",
     tags: ["Arrays", "LinkedList"],
     imageUrl: twopointer,
   },
@@ -72,7 +79,96 @@ export const algorithmsData = [
   },
    
   {
-    title: "Dutch National Flag problem",
+    title: "Dutch National Flag (DNF) problem",
+    description:"The Dutch National Flag problem sorts an array with three distinct values, like Red, White, Blue, efficiently using a single pass algorithm.",
+    tags: ["Arrays", "Pointers"],
+    imageUrl: dnf,
+  },
+  {
+    title: "Recursion",
+    description:"Recursion is a programming technique where a function calls itself to solve a problem, breaking it down into smaller, solvable instances.",
+    tags: ["Arrays","Strings", "Matrix", "Tree", "Graph", "Stack"],
+    imageUrl: rec,
+  },
+  {
+    title: "Backtracking",
+    description:"Backtracking is a problem-solving algorithm that explores potential solutions, undoing incorrect choices to find the correct one efficiently.",
+    tags: ["Arrays","Strings", "Matrix", "Tree", "Graph", "Stack"],
+    imageUrl: backtrack,
+  },
+  {
+    title: "Breadth-First Search (BFS)",
+    description:"Breadth-First Search (BFS) is a graph traversal algorithm that explores all the neighbor nodes at the current depth before moving to the next depth.    ",
+    tags: [ "Matrix", "Tree", "Graph"],
+    imageUrl: test,
+  },
+  {
+    title: "Depth-First Search (DFS)",
+    description:"Depth-First Search (DFS) is a graph traversal algorithm that explores as far as possible along each branch before backtracking.    ",
+    tags: ["Matrix", "Tree", "Graph"],
+    imageUrl: test,
+  },
+ 
+  {
+    title: "Topological Sort",
+    description:"Topological Sort is an algorithm that arranges nodes in a directed acyclic graph in linear order respecting their dependencies.",
+    tags: ["Tree", "Graph"],
+    imageUrl: topo,
+  },
+  {
+    title: "Dijkstra's Algorithm",
+    description:"Dijkstra's Algorithm is a shortest path algorithm used to find the shortest distance between a source node and all other nodes in a weighted graph.",
+    tags: ["Matrix", "Tree", "Graph"],
+    imageUrl: dj,
+  },
+  {
+    title: "Prim's and Kruskal Algorithms",
+    description:"Prim's Algorithm is a minimum spanning tree algorithm used to find the minimum-weight tree that connects all nodes in a weighted graph, minimizing the total edge weight.",
+    tags: [ "Tree", "Graph"],
+    imageUrl: dj,
+  },
+  {
+    title: "Floyd-Warshall",
+    description:"Floyd-Warshall finds shortest paths between all nodes in a weighted graph, considering positive, negative edge weights, and transitive closure.",
+    tags: ["Tree", "Graph"],
+    imageUrl: fw,
+  },
+  {
+    title: "Sieve of Eratosthene",
+    description:"The Sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to a specified limit by iteratively marking non-prime numbers.",
+    tags: ["Arrays", "Mathematics"],
+    imageUrl: sieve,
+  },
+ 
+] as const;
+
+
+
+export const algorithmsDataHome = [
+  {
+    title: "Two Pointers",
+    description:
+      "The two pointers algorithm is a technique using two pointers, often with different speeds or directions, to optimize solving various problems like searching, sorting, etc.",
+    tags: ["Arrays", "LinkedList"],
+    imageUrl: twopointer,
+  },
+  {
+    title: "Binary Search",
+    description:
+      "Binary search is a fast and efficient search algorithm used to find a specific element in a sorted array or list by repeatedly dividing the search interval in half.",
+    tags: ["Arrays", "Sorting"],
+    imageUrl: binarysearch,
+  },
+  {
+    title: "Floyd Cycle Detection",
+    description:
+      "Floyd's cycle detection, or the tortoise and hare algorithm, identifies loops in linked by using two pointers, one slow and one fast, to traverse the data. If they meet, it means there exists a loop.",
+    tags: ["Linked List", "Two Pointers"],
+    imageUrl: floydcycle,
+  },
+   
+  {
+    title: "Dutch National Flag (DNF) problem",
     description:"The Dutch National Flag problem sorts an array with three distinct values, like Red, White, Blue, efficiently using a single pass algorithm.",
     tags: ["Arrays", "Pointers"],
     imageUrl: dnf,

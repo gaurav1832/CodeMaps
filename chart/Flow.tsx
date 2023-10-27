@@ -77,10 +77,6 @@ const initialEdges: Edge[] = [
   { id: "e1-8", source: "7", target: "8", animated: true },
   { id: "e1-9", source: "9", target: "8", animated: true },
   { id: "e1-10", source: "9", target: "10", animated: true }
-
-
-
-
 ];
 
 const nodeTypes = {

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Height of the cut*/
+  --cut: 100px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+section {
+  background-color: #404040;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  color: #404040;
+  background-color: whitesmoke;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tilt {
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+  /* Clip the bottom part of this section*/
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut)));
+  /* Higher z-index value than next section */
+  z-index: 3;
+  position: relative;
+}
+
+.triangle {
+  background: linear-gradient(to right, #ff8008, #ffc837);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--cut)),
+    50% 100%,
+    0 calc(100% - var(--cut))
+  );
+  /*Close the gap with the previous section*/
+  margin-top: calc(var(--cut) * -1);
+  /* Higher z-index value than next section */
+  z-index: 2;
+  position: relative;
+}
+
+.polygon {
+  background: linear-gradient(to right, #ff00cc, #333399);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    80% calc(100% - var(--cut)),
+    20% calc(100% - var(--cut)),
+    0 100%
+  );
+  /*Close the gap with the previous section*/
+  margin-top: calc(var(--cut) * -1);
+  z-index: 1;
+  position: relative;
+}
+
+.last {
+  /*Close the gap with the previous section*/
+  margin-top: calc(var(--cut) * -1);
+}
+
+@media screen and (max-width: 768px) {
+  section h1 {
+    font-size: 2rem;
+  }
+}

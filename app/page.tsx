@@ -6,6 +6,7 @@ import Chart from '../chart/App'
 import Tab from '@/components/Tab' 
 import Interviews from "@/components/Interviews";
 import GPT from '@/components/GPT/App'
+// import RandomJoke from "@/components/RandomJoke";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export default function Home() {
@@ -19,10 +20,9 @@ export default function Home() {
 
       <Algorithms/>
       <Sortings/>
-      {/* <Interviews/> */}
+      <Interviews/>
       <GPT/>
-
-    </main>
+      </main>
     </ChakraProvider>
   );
 }
