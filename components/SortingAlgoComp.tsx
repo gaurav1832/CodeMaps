@@ -25,7 +25,7 @@ export default function SortinAlgorithmComp() {
 
   return (
     <section
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-10"
     >
       <SectionHeading>Sort out your life !</SectionHeading>
       <h2 className="mb-10 text-xl text-bold">with must do sorting algorithms</h2>

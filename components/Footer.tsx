@@ -6,7 +6,7 @@ export default function Footer() {
       <hr />
       <small className=" mt-5 mb-2 block text-xs">
         &copy; 2023 CodeMaps. All rights reserved.
-        <br /> Made with love by <a color="" href="https://gauravgarwa.tech">Gaurav</a>
+        <br /> Made with love by <a className="text-pink-500" href="https://gauravgarwa.tech">Gaurav</a>
       </small>
       {/* <p className="text-xs">
         <span className="font-semibold">About this website:</span> built with

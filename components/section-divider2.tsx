@@ -1,14 +1,12 @@
 "use client";
 import "@/public/styles/sectiondivider2.css"
 import React from "react";
-import { motion } from "framer-motion";
-
-export default function SectionDivider() {
+import {GiNightSleep} from "react-icons/gi"
+export default function SectionDivider2() {
   return (
-    <> 
-    <section className="tilt">
-    <h1>Tilt</h1>
-    </section>
+    <>
+    <h2 className="lalala">eat &nbsp;sleep &nbsp;code &nbsp;repeat.</h2>
+    <b className="hr anim"></b>
     </>
   );
 }

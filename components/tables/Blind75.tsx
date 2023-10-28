@@ -2,7 +2,7 @@ import React from "react";
 import JsonData from "@/public/json/blind75.json";
 import difficulty_to_string from "@/components/helperFunctions/difficulty_to_string";
 import difficulty_color from "@/components/helperFunctions/difficulty_color";
-
+import BooleanToString from "@/components/helperFunctions/boolToString";
 import {
   Center,
   TableContainer,
@@ -49,8 +49,10 @@ const [query, setquery] = useState("")
 
 const DisplayData = JsonData.filter((it) => 
   it.stat.question__title.toLowerCase().includes(query)||
-  difficulty_to_string(it).includes(query.toLowerCase())
+  difficulty_to_string(it).includes(query.toLowerCase()) ||
+  it.stat.topic.toLowerCase().includes(query)
   ).map((info) => {
+     
     const base = "https://leetcode.com/problems/";
     const url = base.concat(info.stat.question__title_slug);
     return (
@@ -60,7 +62,7 @@ const DisplayData = JsonData.filter((it) =>
         <Td>{info.stat.question_id}</Td>
         <Td>
           {" "}
-          <Link href={url}>
+          <Link target="_blank" href={url}>
             {info.stat.question__title}
           </Link>
         </Td>
@@ -74,8 +76,8 @@ const DisplayData = JsonData.filter((it) =>
           </Tag>{" "}
         </Td>
 
-        {/* <Td>{info.link}</Td> */}
-
+        <Td>{info.stat.topic}</Td>
+        <Td>{ BooleanToString(info.paid_only)}</Td>
          <Td>
           {/* <Menu>
                     <MenuButton as={Button}>Referenes</MenuButton>
@@ -104,7 +106,7 @@ const DisplayData = JsonData.filter((it) =>
     onChange={(e) => setquery(e.target.value)}
     mt={50}
     my={50}
-    placeholder='Search ...'
+    placeholder='Search by title, difficulty or topic...'
     ></Input>
     </Center>
     <Center>
@@ -112,13 +114,14 @@ const DisplayData = JsonData.filter((it) =>
       <TableContainer
         p={"30"}
       >
-        <Table >
+        <Table size={"md"}>
           <Thead>
             <Tr>
               <Th color={"blue.300"}>ID</Th>
               <Th color={"blue.300"}>Title</Th>
               <Th color={"blue.300"}>Difficulty</Th>
-              {/* <Th color={"blue.300"}>Resources</Th> */}
+              <Th color={"blue.300"}>Topic</Th>
+              <Th color={"blue.300"}>Premium</Th>
             </Tr>
           </Thead>
 

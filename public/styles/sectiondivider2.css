@@ -1,85 +1,125 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  /* Height of the cut*/
-  --cut: 100px;
-}
-
-body {
-  min-height: 100vh;
-  font-family: "Trebuchet MS", sans-serif;
-}
-
-section {
-  background-color: #404040;
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section h1 {
-  font-size: 2.5rem;
-  color: #404040;
-  background-color: whitesmoke;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.tilt {
-  background: linear-gradient(to right, #1d976c, #93f9b9);
-  /* Clip the bottom part of this section*/
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut)));
-  /* Higher z-index value than next section */
-  z-index: 3;
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+.hr {
+  width: 100%;
+  height: 1px;
+  display: block;
   position: relative;
+  margin-bottom: 0em;
+  padding: 2em 0;
 }
-
-.triangle {
-  background: linear-gradient(to right, #ff8008, #ffc837);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - var(--cut)),
-    50% 100%,
-    0 calc(100% - var(--cut))
-  );
-  /*Close the gap with the previous section*/
-  margin-top: calc(var(--cut) * -1);
-  /* Higher z-index value than next section */
-  z-index: 2;
-  position: relative;
+.hr:after,
+.hr:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 50%;
+  left: 0;
 }
-
-.polygon {
-  background: linear-gradient(to right, #ff00cc, #333399);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    80% calc(100% - var(--cut)),
-    20% calc(100% - var(--cut)),
-    0 100%
+.hr:before {
+  background: linear-gradient(
+    90deg,
+    #10111f 0%,
+    #10111f 50%,
+    transparent 50%,
+    transparent 100%
   );
-  /*Close the gap with the previous section*/
-  margin-top: calc(var(--cut) * -1);
+  background-size: 15px;
+  background-position: center;
   z-index: 1;
-  position: relative;
 }
-
-.last {
-  /*Close the gap with the previous section*/
-  margin-top: calc(var(--cut) * -1);
+.hr:after {
+  transition: opacity 0.3s ease, animation 0.3s ease;
+  background: linear-gradient(
+    to right,
+    #62efab 5%,
+    #f2ea7d 15%,
+    #f2ea7d 25%,
+    #ff8797 35%,
+    #ff8797 45%,
+    #e1a4f4 55%,
+    #e1a4f4 65%,
+    #82fff4 75%,
+    #82fff4 85%,
+    #62efab 95%
+  );
+  background-size: 200%;
+  background-position: 0%;
+  animation: bar 15s linear infinite;
 }
-
-@media screen and (max-width: 768px) {
-  section h1 {
-    font-size: 2rem;
+@keyframes bar {
+  0% {
+    background-position: 0%;
   }
+  100% {
+    background-position: 200%;
+  }
+}
+.hr.anim:before {
+  background: linear-gradient(
+    90deg,
+    #10111f 0%,
+    #10111f 5%,
+    transparent 5%,
+    transparent 10%,
+    #10111f 10%,
+    #10111f 15%,
+    transparent 15%,
+    transparent 20%,
+    #10111f 20%,
+    #10111f 25%,
+    transparent 25%,
+    transparent 30%,
+    #10111f 30%,
+    #10111f 35%,
+    transparent 35%,
+    transparent 40%,
+    #10111f 40%,
+    #10111f 45%,
+    transparent 45%,
+    transparent 50%,
+    #10111f 50%,
+    #10111f 55%,
+    transparent 55%,
+    transparent 60%,
+    #10111f 60%,
+    #10111f 65%,
+    transparent 65%,
+    transparent 70%,
+    #10111f 70%,
+    #10111f 75%,
+    transparent 75%,
+    transparent 80%,
+    #10111f 80%,
+    #10111f 85%,
+    transparent 85%,
+    transparent 90%,
+    #10111f 90%,
+    #10111f 95%,
+    transparent 95%,
+    transparent 100%
+  );
+  background-size: 150px;
+  background-position: center;
+  z-index: 1;
+  animation: bar 120s linear infinite;
+}
+.hr.anim:hover:before {
+  animation-duration: 20s;
+}
+.hr.anim:hover:after {
+  animation-duration: 2s;
+}
+
+h1,
+h2 {
+  line-height: 1;
+  margin-bottom: -0.5em;
+}
+h2 {
+  margin-top: 1em;
+}
+.lalala {
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }

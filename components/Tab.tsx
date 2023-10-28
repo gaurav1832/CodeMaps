@@ -35,6 +35,7 @@ import JsonDataDisplayBit from "./tables/dataTableBit";
 import JsonDataDisplayUF from "./tables/dataTableUF";
 import SectionHeading from "./section-heading";
 import {PiCodeBlockLight} from "react-icons/pi"
+
 const TabFunction = () => {
  
   const [showTab, setShowTab] = useState(true);
@@ -56,7 +57,7 @@ const TabFunction = () => {
    
    return (
     <> 
-      <SectionHeading>Problems <Center> <Heading mt={5} fontSize={48}> <PiCodeBlockLight/></Heading> </Center> </SectionHeading>
+      <SectionHeading>Problems <Center> <Heading mt={5} mb={10} fontSize={48}> <PiCodeBlockLight/></Heading> </Center> </SectionHeading>
      <Center>
       { showTab &&
       

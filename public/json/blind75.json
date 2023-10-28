@@ -334,5 +334,1397 @@
     "is_favor": false,
     "frequency": 0,
     "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 70,
+      "question__article__live": true,
+      "question__article__slug": "climbing-stairs",
+      "question__article__has_video_solution": false,
+      "question__title": "Climbing Stairs",
+      "question__title_slug": "climbing-stairs",
+      "question__hide": false,
+      "total_acs": 905782,
+      "total_submitted": 1861202,
+      "frontend_question_id": 70,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 322,
+      "question__article__live": true,
+      "question__article__slug": "coin-change",
+      "question__article__has_video_solution": true,
+      "question__title": "Coin Change",
+      "question__title_slug": "coin-change",
+      "question__hide": false,
+      "total_acs": 578420,
+      "total_submitted": 1551350,
+      "frontend_question_id": 322,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 300,
+      "question__article__live": true,
+      "question__article__slug": "longest-increasing-subsequence",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Increasing Subsequence",
+      "question__title_slug": "longest-increasing-subsequence",
+      "question__hide": false,
+      "total_acs": 508215,
+      "total_submitted": 1150719,
+      "frontend_question_id": 300,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 1250,
+      "question__article__live": true,
+      "question__article__slug": "longest-common-subsequence",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Common Subsequence",
+      "question__title_slug": "longest-common-subsequence",
+      "question__hide": false,
+      "total_acs": 183683,
+      "total_submitted": 313182,
+      "frontend_question_id": 1143,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 139,
+      "question__article__live": true,
+      "question__article__slug": "word-break",
+      "question__article__has_video_solution": true,
+      "question__title": "Word Break",
+      "question__title_slug": "word-break",
+      "question__hide": false,
+      "total_acs": 722241,
+      "total_submitted": 1729662,
+      "frontend_question_id": 139,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 39,
+      "question__article__live": true,
+      "question__article__slug": "combination-sum",
+      "question__article__has_video_solution": false,
+      "question__title": "Combination Sum",
+      "question__title_slug": "combination-sum",
+      "question__hide": false,
+      "total_acs": 696541,
+      "total_submitted": 1172767,
+      "frontend_question_id": 39,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 198,
+      "question__article__live": true,
+      "question__article__slug": "house-robber",
+      "question__article__has_video_solution": false,
+      "question__title": "House Robber",
+      "question__title_slug": "house-robber",
+      "question__hide": false,
+      "total_acs": 685068,
+      "total_submitted": 1596294,
+      "frontend_question_id": 198,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 91,
+      "question__article__live": true,
+      "question__article__slug": "decode-ways",
+      "question__article__has_video_solution": true,
+      "question__title": "Decode Ways",
+      "question__title_slug": "decode-ways",
+      "question__hide": false,
+      "total_acs": 536322,
+      "total_submitted": 2011525,
+      "frontend_question_id": 91,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 62,
+      "question__article__live": true,
+      "question__article__slug": "unique-paths",
+      "question__article__has_video_solution": false,
+      "question__title": "Unique Paths",
+      "question__title_slug": "unique-paths",
+      "question__hide": false,
+      "total_acs": 607953,
+      "total_submitted": 1083646,
+      "frontend_question_id": 62,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 55,
+      "question__article__live": true,
+      "question__article__slug": "jump-game",
+      "question__article__has_video_solution": false,
+      "question__title": "Jump Game",
+      "question__title_slug": "jump-game",
+      "question__hide": false,
+      "total_acs": 597292,
+      "total_submitted": 1697953,
+      "frontend_question_id": 55,
+      "is_new_question": false,
+      "topic": "Dynamic Programming"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 133,
+      "question__article__live": true,
+      "question__article__slug": "clone-graph",
+      "question__article__has_video_solution": false,
+      "question__title": "Clone Graph",
+      "question__title_slug": "clone-graph",
+      "question__hide": false,
+      "total_acs": 446321,
+      "total_submitted": 1133109,
+      "frontend_question_id": 133,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 207,
+      "question__article__live": true,
+      "question__article__slug": "course-schedule",
+      "question__article__has_video_solution": false,
+      "question__title": "Course Schedule",
+      "question__title_slug": "course-schedule",
+      "question__hide": false,
+      "total_acs": 552510,
+      "total_submitted": 1246916,
+      "frontend_question_id": 207,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 417,
+      "question__article__live": true,
+      "question__article__slug": "pacific-atlantic-water-flow",
+      "question__article__has_video_solution": false,
+      "question__title": "Pacific Atlantic Water Flow",
+      "question__title_slug": "pacific-atlantic-water-flow",
+      "question__hide": false,
+      "total_acs": 101356,
+      "total_submitted": 237671,
+      "frontend_question_id": 417,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 200,
+      "question__article__live": true,
+      "question__article__slug": "number-of-islands",
+      "question__article__has_video_solution": false,
+      "question__title": "Number of Islands",
+      "question__title_slug": "number-of-islands",
+      "question__hide": false,
+      "total_acs": 984013,
+      "total_submitted": 1998480,
+      "frontend_question_id": 200,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 128,
+      "question__article__live": true,
+      "question__article__slug": "longest-consecutive-sequence",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Consecutive Sequence",
+      "question__title_slug": "longest-consecutive-sequence",
+      "question__hide": false,
+      "total_acs": 379922,
+      "total_submitted": 820196,
+      "frontend_question_id": 128,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 269,
+      "question__article__live": true,
+      "question__article__slug": "alien-dictionary",
+      "question__article__has_video_solution": false,
+      "question__title": "Alien Dictionary",
+      "question__title_slug": "alien-dictionary",
+      "question__hide": false,
+      "total_acs": 193051,
+      "total_submitted": 572435,
+      "frontend_question_id": 269,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": true,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 261,
+      "question__article__live": true,
+      "question__article__slug": "graph-valid-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Graph Valid Tree",
+      "question__title_slug": "graph-valid-tree",
+      "question__hide": false,
+      "total_acs": 155337,
+      "total_submitted": 359163,
+      "frontend_question_id": 261,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": true,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 323,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Connected Components in an Undirected Graph",
+      "question__title_slug": "number-of-connected-components-in-an-undirected-graph",
+      "question__hide": false,
+      "total_acs": 132931,
+      "total_submitted": 229707,
+      "frontend_question_id": 323,
+      "is_new_question": false,
+      "topic": "Graph"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": true,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 57,
+      "question__article__live": true,
+      "question__article__slug": "insert-interval",
+      "question__article__has_video_solution": false,
+      "question__title": "Insert Interval",
+      "question__title_slug": "insert-interval",
+      "question__hide": false,
+      "total_acs": 333848,
+      "total_submitted": 949726,
+      "frontend_question_id": 57,
+      "is_new_question": false,
+      "topic": "Interval"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 56,
+      "question__article__live": true,
+      "question__article__slug": "merge-intervals",
+      "question__article__has_video_solution": true,
+      "question__title": "Merge Intervals",
+      "question__title_slug": "merge-intervals",
+      "question__hide": false,
+      "total_acs": 830492,
+      "total_submitted": 2018572,
+      "frontend_question_id": 56,
+      "is_new_question": false,
+      "topic": "Interval"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 435,
+      "question__article__live": true,
+      "question__article__slug": "non-overlapping-intervals",
+      "question__article__has_video_solution": false,
+      "question__title": "Non-overlapping Intervals",
+      "question__title_slug": "non-overlapping-intervals",
+      "question__hide": false,
+      "total_acs": 131645,
+      "total_submitted": 300118,
+      "frontend_question_id": 435,
+      "is_new_question": false,
+      "topic": "Interval"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 252,
+      "question__article__live": true,
+      "question__article__slug": "meeting-rooms",
+      "question__article__has_video_solution": true,
+      "question__title": "Meeting Rooms",
+      "question__title_slug": "meeting-rooms",
+      "question__hide": false,
+      "total_acs": 179258,
+      "total_submitted": 323414,
+      "frontend_question_id": 252,
+      "is_new_question": false,
+      "topic": "Interval"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": true,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 253,
+      "question__article__live": true,
+      "question__article__slug": "meeting-rooms-ii",
+      "question__article__has_video_solution": false,
+      "question__title": "Meeting Rooms II",
+      "question__title_slug": "meeting-rooms-ii",
+      "question__hide": false,
+      "total_acs": 397189,
+      "total_submitted": 846438,
+      "frontend_question_id": 253,
+      "is_new_question": false,
+      "topic": "Interval"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": true,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 206,
+      "question__article__live": true,
+      "question__article__slug": "reverse-linked-list",
+      "question__article__has_video_solution": false,
+      "question__title": "Reverse Linked List",
+      "question__title_slug": "reverse-linked-list",
+      "question__hide": false,
+      "total_acs": 1316477,
+      "total_submitted": 2013213,
+      "frontend_question_id": 206,
+      "is_new_question": false,
+      "topic": "Linked List"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 141,
+      "question__article__live": true,
+      "question__article__slug": "linked-list-cycle",
+      "question__article__has_video_solution": true,
+      "question__title": "Linked List Cycle",
+      "question__title_slug": "linked-list-cycle",
+      "question__hide": false,
+      "total_acs": 859699,
+      "total_submitted": 2001598,
+      "frontend_question_id": 141,
+      "is_new_question": false,
+      "topic": "Linked List"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 21,
+      "question__article__live": true,
+      "question__article__slug": "merge-two-sorted-lists",
+      "question__article__has_video_solution": false,
+      "question__title": "Merge Two Sorted Lists",
+      "question__title_slug": "merge-two-sorted-lists",
+      "question__hide": false,
+      "total_acs": 1343512,
+      "total_submitted": 2392539,
+      "frontend_question_id": 21,
+      "is_new_question": false,
+      "topic": "Linked List"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 19,
+      "question__article__live": true,
+      "question__article__slug": "remove-nth-node-from-end-of-list",
+      "question__article__has_video_solution": false,
+      "question__title": "Remove Nth Node From End of List",
+      "question__title_slug": "remove-nth-node-from-end-of-list",
+      "question__hide": false,
+      "total_acs": 808808,
+      "total_submitted": 2261360,
+      "frontend_question_id": 19,
+      "is_new_question": false,
+      "topic": "Linked List"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 143,
+      "question__article__live": true,
+      "question__article__slug": "reorder-list",
+      "question__article__has_video_solution": false,
+      "question__title": "Reorder List",
+      "question__title_slug": "reorder-list",
+      "question__hide": false,
+      "total_acs": 310077,
+      "total_submitted": 761247,
+      "frontend_question_id": 143,
+      "is_new_question": false,
+      "topic": "Linked List"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 73,
+      "question__article__live": true,
+      "question__article__slug": "set-matrix-zeroes",
+      "question__article__has_video_solution": false,
+      "question__title": "Set Matrix Zeroes",
+      "question__title_slug": "set-matrix-zeroes",
+      "question__hide": false,
+      "total_acs": 404675,
+      "total_submitted": 911639,
+      "frontend_question_id": 73,
+      "is_new_question": false,
+      "topic": "Matrix"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 54,
+      "question__article__live": true,
+      "question__article__slug": "spiral-matrix",
+      "question__article__has_video_solution": false,
+      "question__title": "Spiral Matrix",
+      "question__title_slug": "spiral-matrix",
+      "question__hide": false,
+      "total_acs": 471833,
+      "total_submitted": 1305388,
+      "frontend_question_id": 54,
+      "is_new_question": false,
+      "topic": "Matrix"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 48,
+      "question__article__live": true,
+      "question__article__slug": "rotate-image",
+      "question__article__has_video_solution": false,
+      "question__title": "Rotate Image",
+      "question__title_slug": "rotate-image",
+      "question__hide": false,
+      "total_acs": 538550,
+      "total_submitted": 896070,
+      "frontend_question_id": 48,
+      "is_new_question": false,
+      "topic": "Matrix"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 79,
+      "question__article__live": true,
+      "question__article__slug": "word-search",
+      "question__article__has_video_solution": false,
+      "question__title": "Word Search",
+      "question__title_slug": "word-search",
+      "question__hide": false,
+      "total_acs": 622834,
+      "total_submitted": 1687030,
+      "frontend_question_id": 79,
+      "is_new_question": false,
+      "topic": "Matrix"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3,
+      "question__article__live": true,
+      "question__article__slug": "longest-substring-without-repeating-characters",
+      "question__article__has_video_solution": true,
+      "question__title": "Longest Substring Without Repeating Characters",
+      "question__title_slug": "longest-substring-without-repeating-characters",
+      "question__hide": false,
+      "total_acs": 2059324,
+      "total_submitted": 6546139,
+      "frontend_question_id": 3,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 424,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Repeating Character Replacement",
+      "question__title_slug": "longest-repeating-character-replacement",
+      "question__hide": false,
+      "total_acs": 102991,
+      "total_submitted": 213524,
+      "frontend_question_id": 424,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 76,
+      "question__article__live": true,
+      "question__article__slug": "minimum-window-substring",
+      "question__article__has_video_solution": false,
+      "question__title": "Minimum Window Substring",
+      "question__title_slug": "minimum-window-substring",
+      "question__hide": false,
+      "total_acs": 506370,
+      "total_submitted": 1405020,
+      "frontend_question_id": 76,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 242,
+      "question__article__live": true,
+      "question__article__slug": "valid-anagram",
+      "question__article__has_video_solution": false,
+      "question__title": "Valid Anagram",
+      "question__title_slug": "valid-anagram",
+      "question__hide": false,
+      "total_acs": 771479,
+      "total_submitted": 1315387,
+      "frontend_question_id": 242,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 49,
+      "question__article__live": true,
+      "question__article__slug": "group-anagrams",
+      "question__article__has_video_solution": false,
+      "question__title": "Group Anagrams",
+      "question__title_slug": "group-anagrams",
+      "question__hide": false,
+      "total_acs": 870848,
+      "total_submitted": 1465889,
+      "frontend_question_id": 49,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 20,
+      "question__article__live": true,
+      "question__article__slug": "valid-parentheses",
+      "question__article__has_video_solution": false,
+      "question__title": "Valid Parentheses",
+      "question__title_slug": "valid-parentheses",
+      "question__hide": false,
+      "total_acs": 1337717,
+      "total_submitted": 3351814,
+      "frontend_question_id": 20,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 5,
+      "question__article__live": true,
+      "question__article__slug": "longest-palindromic-substring",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Palindromic Substring",
+      "question__title_slug": "longest-palindromic-substring",
+      "question__hide": false,
+      "total_acs": 1232150,
+      "total_submitted": 4033892,
+      "frontend_question_id": 5,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 647,
+      "question__article__live": true,
+      "question__article__slug": "palindromic-substrings",
+      "question__article__has_video_solution": false,
+      "question__title": "Palindromic Substrings",
+      "question__title_slug": "palindromic-substrings",
+      "question__hide": false,
+      "total_acs": 251834,
+      "total_submitted": 406631,
+      "frontend_question_id": 647,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 271,
+      "question__article__live": true,
+      "question__article__slug": "encode-and-decode-strings",
+      "question__article__has_video_solution": false,
+      "question__title": "Encode and Decode Strings",
+      "question__title_slug": "encode-and-decode-strings",
+      "question__hide": false,
+      "total_acs": 67277,
+      "total_submitted": 205036,
+      "frontend_question_id": 271,
+      "is_new_question": false,
+      "topic": "String"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": true,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 104,
+      "question__article__live": true,
+      "question__article__slug": "maximum-depth-of-binary-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Maximum Depth of Binary Tree",
+      "question__title_slug": "maximum-depth-of-binary-tree",
+      "question__hide": false,
+      "total_acs": 1078184,
+      "total_submitted": 1582510,
+      "frontend_question_id": 104,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 100,
+      "question__article__live": true,
+      "question__article__slug": "same-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Same Tree",
+      "question__title_slug": "same-tree",
+      "question__hide": false,
+      "total_acs": 689733,
+      "total_submitted": 1273592,
+      "frontend_question_id": 100,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 226,
+      "question__article__live": true,
+      "question__article__slug": "invert-binary-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Invert Binary Tree",
+      "question__title_slug": "invert-binary-tree",
+      "question__hide": false,
+      "total_acs": 662934,
+      "total_submitted": 988173,
+      "frontend_question_id": 226,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 124,
+      "question__article__live": true,
+      "question__article__slug": "binary-tree-maximum-path-sum",
+      "question__article__has_video_solution": false,
+      "question__title": "Binary Tree Maximum Path Sum",
+      "question__title_slug": "binary-tree-maximum-path-sum",
+      "question__hide": false,
+      "total_acs": 478371,
+      "total_submitted": 1347081,
+      "frontend_question_id": 124,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 102,
+      "question__article__live": true,
+      "question__article__slug": "binary-tree-level-order-traversal",
+      "question__article__has_video_solution": false,
+      "question__title": "Binary Tree Level Order Traversal",
+      "question__title_slug": "binary-tree-level-order-traversal",
+      "question__hide": false,
+      "total_acs": 789753,
+      "total_submitted": 1392109,
+      "frontend_question_id": 102,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 297,
+      "question__article__live": true,
+      "question__article__slug": "serialize-and-deserialize-binary-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Serialize and Deserialize Binary Tree",
+      "question__title_slug": "serialize-and-deserialize-binary-tree",
+      "question__hide": false,
+      "total_acs": 420494,
+      "total_submitted": 842437,
+      "frontend_question_id": 297,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 572,
+      "question__article__live": true,
+      "question__article__slug": "subtree-of-another-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Subtree of Another Tree",
+      "question__title_slug": "subtree-of-another-tree",
+      "question__hide": false,
+      "total_acs": 294172,
+      "total_submitted": 660501,
+      "frontend_question_id": 572,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 105,
+      "question__article__live": true,
+      "question__article__slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "question__article__has_video_solution": false,
+      "question__title": "Construct Binary Tree from Preorder and Inorder Traversal",
+      "question__title_slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+      "question__hide": false,
+      "total_acs": 467737,
+      "total_submitted": 899717,
+      "frontend_question_id": 105,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 98,
+      "question__article__live": true,
+      "question__article__slug": "validate-binary-search-tree",
+      "question__article__has_video_solution": true,
+      "question__title": "Validate Binary Search Tree",
+      "question__title_slug": "validate-binary-search-tree",
+      "question__hide": false,
+      "total_acs": 926606,
+      "total_submitted": 3216066,
+      "frontend_question_id": 98,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 230,
+      "question__article__live": true,
+      "question__article__slug": "kth-smallest-element-in-a-bst",
+      "question__article__has_video_solution": false,
+      "question__title": "Kth Smallest Element in a BST",
+      "question__title_slug": "kth-smallest-element-in-a-bst",
+      "question__hide": false,
+      "total_acs": 509596,
+      "total_submitted": 812747,
+      "frontend_question_id": 230,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 235,
+      "question__article__live": true,
+      "question__article__slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Lowest Common Ancestor of a Binary Search Tree",
+      "question__title_slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "question__hide": false,
+      "total_acs": 483619,
+      "total_submitted": 932467,
+      "frontend_question_id": 235,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 208,
+      "question__article__live": true,
+      "question__article__slug": "implement-trie-prefix-tree",
+      "question__article__has_video_solution": false,
+      "question__title": "Implement Trie (Prefix Tree)",
+      "question__title_slug": "implement-trie-prefix-tree",
+      "question__hide": false,
+      "total_acs": 396852,
+      "total_submitted": 760028,
+      "frontend_question_id": 208,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 211,
+      "question__article__live": true,
+      "question__article__slug": "add-and-search-word",
+      "question__article__has_video_solution": false,
+      "question__title": "Design Add and Search Words Data Structure",
+      "question__title_slug": "design-add-and-search-words-data-structure",
+      "question__hide": false,
+      "total_acs": 270897,
+      "total_submitted": 672096,
+      "frontend_question_id": 211,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 212,
+      "question__article__live": true,
+      "question__article__slug": "word-search-ii",
+      "question__article__has_video_solution": false,
+      "question__title": "Word Search II",
+      "question__title_slug": "word-search-ii",
+      "question__hide": false,
+      "total_acs": 283840,
+      "total_submitted": 762789,
+      "frontend_question_id": 212,
+      "is_new_question": false,
+      "topic": "Tree"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 23,
+      "question__article__live": true,
+      "question__article__slug": "merge-k-sorted-list",
+      "question__article__has_video_solution": false,
+      "question__title": "Merge k Sorted Lists",
+      "question__title_slug": "merge-k-sorted-lists",
+      "question__hide": false,
+      "total_acs": 837706,
+      "total_submitted": 1958030,
+      "frontend_question_id": 23,
+      "is_new_question": false,
+      "topic": "Heap"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 347,
+      "question__article__live": true,
+      "question__article__slug": "top-k-frequent-elements",
+      "question__article__has_video_solution": false,
+      "question__title": "Top K Frequent Elements",
+      "question__title_slug": "top-k-frequent-elements",
+      "question__hide": false,
+      "total_acs": 553753,
+      "total_submitted": 886697,
+      "frontend_question_id": 347,
+      "is_new_question": false,
+      "topic": "Heap"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 295,
+      "question__article__live": true,
+      "question__article__slug": "find-median-from-data-stream",
+      "question__article__has_video_solution": false,
+      "question__title": "Find Median from Data Stream",
+      "question__title_slug": "find-median-from-data-stream",
+      "question__hide": false,
+      "total_acs": 278224,
+      "total_submitted": 591031,
+      "frontend_question_id": 295,
+      "is_new_question": false,
+      "topic": "Heap"
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
   }
 ]
