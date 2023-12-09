@@ -17,14 +17,22 @@ import test from "@/public/testing.png"
 import sieve from "@/public/sieve.png"
 import fw from "@/public/fwalgo.png"
 export const links = [
-  {
-    name: "Home",
-    route: "/",
-  },
+  // {
+  //   name: "<CodeMaps/>",
+  //   route: "/",
+  // },
   {
     name: "Algorithms",
-    route: "/algorithms",
+    route: "algorithms",
   },
+  {
+    name: "Interviews",
+    route: "interviews"
+  },
+  {
+    name: "Login/Signup",
+    route: "sign-in"
+  }
  
 ] as const;
 

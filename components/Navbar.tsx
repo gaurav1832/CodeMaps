@@ -19,26 +19,10 @@ const Navbar = () => {
           className="block md:hidden"
         />  
 
-      {/* <ul className="flex-center gap-x-3 max-md:hidden md:gap-x-10">
-          <li className="body-text text-gradient_blue-purple !font-bold">
-            <Link
-              href="https://github.com/gaurav1832"
-              target="_blank"
-            >
-              GitHub
-            </Link>
-          </li>
-          <li className="body-text !font-normal">
-            <Link
-              href=""
-              target="_blank"
-            >
-              Feedback
-            </Link>
-          </li>
-        </ul>  */}
+ 
         
       </div>
+      
     </nav>
     </ChakraProvider>
   )

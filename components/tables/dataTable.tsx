@@ -20,10 +20,9 @@ import {
   Input
 } from "@chakra-ui/react";
 
+import "@/public/styles/dataTable.css"
+
 import { useState, useEffect } from "react";
-
- 
-
 
 function JsonDataDisplay() {
 
@@ -41,9 +40,6 @@ const DisplayData = JsonData.filter((it) =>
     return (
       <> 
       <Tr>
-        {/* <Td>
-        <input  type="checkbox" className="ques-checkbox" name="mycheckbox" autoComplete="off" value="yes"></input>
-        </Td> */}
         <Td>
           <Link color={"gray.300"} target="_blank" href={url}>{info.title}</Link>
         </Td>
@@ -62,20 +58,8 @@ const DisplayData = JsonData.filter((it) =>
         <Td  maxWidth={150}>
         {info.companies.map( info =>   <p className="inline px-2" key={info.slug}><Tag fontSize={12} variant='subtle' maxWidth={"fit-content"}>{info.name}{"("}{info.frequency}{")"}</Tag></p>)}  
         </Td>
- 
-        <Td>
-          {/* <Menu>
-                    <MenuButton as={Button}>Referenes</MenuButton>
-                    <MenuList>
-                      <MenuItem>Download</MenuItem>
-                      <MenuItem>Create a Copy</MenuItem>
-                      <MenuItem>Mark as Draft</MenuItem>
-                      <MenuItem>Delete</MenuItem>
-                      <MenuItem>Attend a Workshop</MenuItem>
-                    </MenuList>
-                  </Menu> */}
-        </Td>
       </Tr>
+
       </>
     );
   });
@@ -102,8 +86,6 @@ const DisplayData = JsonData.filter((it) =>
             <Thead>
               <Tr>
 
-                {/* <Th>Status</Th> */}
-
                 <Th color={"blue.300"}>Title</Th>
                 <Th color={"blue.300"} textAlign={'center'}>Difficulty</Th>
                 <Th color={"blue.300"}>Companies</Th>
@@ -122,3 +104,5 @@ const DisplayData = JsonData.filter((it) =>
 
 
 export default JsonDataDisplay;
+
+

@@ -4,7 +4,7 @@ import SectionDivider from "@/components/section-divider";
 import SectionDividerSec from "@/components/section-divider2";
 import SectionDividerTer from "@/components/section-divider3";
 import Sortings from "@/components/SortingAlgoComp";
-import Chart from '../chart/App'
+import Chart from '../../chart/App'
 import Tab from '@/components/Tab' 
 import Interviews from "@/components/Interviews";
 import Resources from "@/components/Resources";
@@ -25,8 +25,8 @@ export default function Home() {
 
       <Sortings/>
       <Resources/>
-      <SectionDividerTer/>
-      <Interviews/>
+      {/* <SectionDividerTer/> */}
+      {/* <Interviews/> */}
       <GPT/>
       </main>
     </ChakraProvider>

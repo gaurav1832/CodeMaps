@@ -7,7 +7,6 @@ import Project from "./algorithm";
 import { useSectionInView } from "@/lib/hooks";
 import { Button, Center, SimpleGrid, Heading, ChakraProvider, Input } from "@chakra-ui/react";
 import { IoArrowForwardCircle } from "react-icons/io5";
-import Search from '@/components/searchbar'
 import algohero from '@/public/algohero.png'
 
 
@@ -18,14 +17,14 @@ export default function Projects() {
   return (
      <section id="projects" className="scroll-mt-56 mb-28 ">
        
-      <Center><Heading mt={10} mb={20}>Famous Algorithms and techniques you must know ...</Heading></Center>
+      <Center><Heading >Famous Algorithms and techniques you must know ...</Heading></Center>
 
-      <Center className="container">   
+      {/* <Center className="container">   
         <Image   src={algohero} alt="algotithms_header_image"></Image>
         <Image   src={algohero} alt="algotithms_header_image"></Image>
         <Image   src={algohero} alt="algotithms_header_image"></Image>
         <Image   src={algohero} alt="algotithms_header_image"></Image>
-       </Center>
+       </Center> */}
 
       <Center>
 
