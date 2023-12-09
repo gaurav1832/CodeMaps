@@ -15,20 +15,9 @@ import {
   Tfoot,
   Td,
   Tbody,
-  TableCaption,
   Tag,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
   Link,
   ChakraProvider,
-  Input
 } from "@chakra-ui/react";
 
 
@@ -42,7 +31,6 @@ const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
     return (
       <> 
       <Tr>
-        {/* <Td>{info.id}</Td> */}
         <Td>
           <Link color={"gray.300"} target="_blank" href={url}>{info.title}</Link>
         </Td>
@@ -55,8 +43,6 @@ const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
            <Center> {info.difficulty} </Center>
           </Tag>{" "}
         </Td>
-
- 
         <Td  maxWidth={150}>
         {info.companies.map( info =>   <p className="inline px-2" key={info.slug}><Tag fontSize={12} variant='subtle' maxWidth={"fit-content"}>{info.name}{"("}{info.frequency}{")"}</Tag></p>)}  
         </Td>
@@ -80,9 +66,6 @@ const DisplayData = JsonData.filter((it) =>  it.pattern.includes(topic)
           <Table>
             <Thead>
               <Tr>
-
-                {/* <Th>ID</Th> */}
-
                 <Th color={"blue.300"}>Title</Th>
                 <Th color={"blue.300"} textAlign={'center'}>Difficulty</Th>
                 <Th color={"blue.300"}>Companies</Th>

@@ -52,9 +52,6 @@ const DisplayData = JsonData.filter((it) =>
            <Center> {info.difficulty} </Center>
           </Tag>{" "}
         </Td>
-
-    
-
         <Td  maxWidth={150}>
         {info.companies.map( info =>   <p className="inline px-2" key={info.slug}><Tag fontSize={12} variant='subtle' maxWidth={"fit-content"}>{info.name}{"("}{info.frequency}{")"}</Tag></p>)}  
         </Td>
@@ -85,7 +82,6 @@ const DisplayData = JsonData.filter((it) =>
           <Table>
             <Thead>
               <Tr>
-
                 <Th color={"blue.300"}>Title</Th>
                 <Th color={"blue.300"} textAlign={'center'}>Difficulty</Th>
                 <Th color={"blue.300"}>Companies</Th>
@@ -93,6 +89,7 @@ const DisplayData = JsonData.filter((it) =>
             </Thead>
 
             <Tbody>{DisplayData}</Tbody>
+            
           </Table>
         </TableContainer>
       </Center>
