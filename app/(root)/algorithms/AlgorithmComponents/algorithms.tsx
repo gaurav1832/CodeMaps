@@ -1,13 +1,10 @@
 "use client";
 import '@/public/styles/algorithm.css'
-import Image from "next/image";
 import React, { useState } from "react";
 import { algorithmsData } from "@/lib/data";
 import Project from "./algorithm";
-import { useSectionInView } from "@/lib/hooks";
 import { Button, Center, SimpleGrid, Heading, ChakraProvider, Input } from "@chakra-ui/react";
-import { IoArrowForwardCircle } from "react-icons/io5";
-import algohero from '@/public/algohero.png'
+ 
 
 
 export default function Projects() {

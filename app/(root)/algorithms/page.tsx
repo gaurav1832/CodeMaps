@@ -1,5 +1,5 @@
 import React from 'react'
-import Algorithms from "./Components/algorithms"
+import Algorithms from "./AlgorithmComponents/algorithms"
 import { ChakraProvider } from '@chakra-ui/react'
 const page = () => {
   return (
