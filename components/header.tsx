@@ -7,32 +7,12 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import Navbar from "@/components/Navbar";
 import '@/public/styles/header.css'
-import { useState, useEffect } from "react";
 
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
-
-
-  const [show, setShow] = useState(false)
-  const controlNavbar = () => {
-      if (window.scrollY > 125 ) {
-          setShow(true)
-      }else{
-        setShow(false)
-      }
-  }
-
-  useEffect(() => {
-      window.addEventListener('scroll', controlNavbar)
-      return () => {
-          window.removeEventListener('scroll', controlNavbar)
-      }
-  }, [])
-
 
   return (
     <header className="z-[999] relative">
@@ -50,7 +30,9 @@ export default function Header() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
+            <Link href={"/"}> 
             <Image className="left-0" src='/logo.png' width={120} height={5} alt='CM_logo' />
+            </Link>
            </motion.li>
           
         {links.map((link) => (
@@ -93,11 +75,6 @@ export default function Header() {
       </ul>
     </nav>
   </header>
-    // </>
-
     
   );
-
-
-  
-}
+  }
